@@ -1,0 +1,416 @@
+{% extends 'base.html'%}
+
+{%block contents%}
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Car registeration</h3>
+
+                </div>
+                <div class="col-sm-6">
+                    <!-- Bookmark Start-->
+                    <div class="bookmark">
+                        <ul>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover"
+                                    data-placement="top" title="" data-original-title="Tables"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-inbox">
+                                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                        <path
+                                            d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                                        </path>
+                                    </svg></a></li>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover"
+                                    data-placement="top" title="" data-original-title="Chat"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-message-square">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg></a></li>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover"
+                                    data-placement="top" title="" data-original-title="Icons"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-command">
+                                        <path
+                                            d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                                        </path>
+                                    </svg></a></li>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover"
+                                    data-placement="top" title="" data-original-title="Learning"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-layers">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                        <polyline points="2 17 12 22 22 17"></polyline>
+                                        <polyline points="2 12 12 17 22 12"></polyline>
+                                    </svg></a></li>
+                            <li><a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-star bookmark-search">
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    </svg></a>
+                                <form class="form-inline search-form">
+                                    <div class="form-group form-control-search">
+                                        <input type="text" placeholder="Search..">
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Bookmark Ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form theme-form">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label>Car name</label>
+                                        <input class="form-control" type="text" placeholder="Project name *">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <label>Amout</label>
+                                        <input class="form-control" type="text" placeholder="Enter project Rate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <label>Car Type</label>
+                                        <select class="form-select">
+                                            <option>Benz</option>
+                                            <option>Prado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <label>Car performance</label>
+                                        <select class="form-select">
+                                            <option>Low</option>
+                                            <option>Medium</option>
+                                            <option>High</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <label>Registered date</label>
+                                        <input class="datepicker-here form-control" type="text" data-language="en">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="mb-3">
+                                        <label>Registered date</label>
+                                        <input class="datepicker-here form-control" type="text" data-language="en">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label>Enter some Details</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea4"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label>Upload project file</label>
+                                        <form class="dropzone dz-clickable" id="singleFileUpload" action="/upload.php">
+                                            <div class="dz-message needsclick"><i class="icon-cloud-up"></i>
+                                                <h6>Drop files here or click to upload.</h6><span
+                                                    class="note needsclick">(This is just a demo dropzone. Selected
+                                                    files are <strong>not</strong> actually uploaded.)</span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text-end"><a class="btn btn-secondary me-3" href="#">Add</a><a
+                                            class="btn btn-danger" href="#">Cancel</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h5>Individual column searching (text inputs) </h5><span>The searching functionality provided by DataTables
+                            is useful for quickly search through the information in the table - however the search is global, and
+                            you may wish to present controls that search on specific columns.</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive product-table">
+                            <div id="basic-1_wrapper" class="dataTables_wrapper no-footer">
+                                <div class="dataTables_length" id="basic-1_length"><label>Show <select name="basic-1_length"
+                                            aria-controls="basic-1" class="">
+                                            <option value="10">10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select> entries</label></div>
+                                <div id="basic-1_filter" class="dataTables_filter"><label>Search:<input type="search" class=""
+                                            placeholder="" aria-controls="basic-1"></label></div>
+                                <table class="display dataTable no-footer" id="basic-1" role="grid" aria-describedby="basic-1_info">
+                                    <thead>
+                                        <tr role="row">
+                                            <th class="sorting_asc" tabindex="0" aria-controls="basic-1" rowspan="1" colspan="1"
+                                                aria-sort="ascending" aria-label="Image: activate to sort column descending"
+                                                style="width: 157.547px;">Image</th>
+                                            <th class="sorting" tabindex="0" aria-controls="basic-1" rowspan="1" colspan="1"
+                                                aria-label="Details: activate to sort column ascending" style="width: 458.25px;">
+                                                Details</th>
+                                            <th class="sorting" tabindex="0" aria-controls="basic-1" rowspan="1" colspan="1"
+                                                aria-label="Amount: activate to sort column ascending" style="width: 157.531px;">
+                                                Amount</th>
+                                            <th class="sorting" tabindex="0" aria-controls="basic-1" rowspan="1" colspan="1"
+                                                aria-label="Stock: activate to sort column ascending" style="width: 157.531px;">
+                                                Stock</th>
+                                            <th class="sorting" tabindex="0" aria-controls="basic-1" rowspan="1" colspan="1"
+                                                aria-label="Start date: activate to sort column ascending"
+                                                style="width: 157.531px;">Start date</th>
+                                            <th class="sorting" tabindex="0" aria-controls="basic-1" rowspan="1" colspan="1"
+                                                aria-label="Action: activate to sort column ascending" style="width: 157.609px;">
+                                                Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+
+
+
+
+
+
+
+
+
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-1.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Red Lipstick </h6>
+                                                </a><span>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</span>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-success">In Stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-2.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Pink Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-primary">Low Stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-3.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Gray Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-danger">out of stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-4.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Green Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-primary">Low Stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-5.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Black Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-success">In Stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-6.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> White Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-primary">Low Stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-1.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> light Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-danger">out of stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-2.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Gliter Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-danger">out of stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-3.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> green Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-success">In Stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                            <td class="sorting_1"><a href="product-page.html"><img
+                                                        src="../assets/images/ecommerce/product-table-4.png" alt=""></a></td>
+                                            <td><a href="product-page.html">
+                                                    <h6> Yellow Lipstick </h6>
+                                                </a>
+                                                <p>Interchargebla lens Digital Camera with APS-C-X Trans CMOS Sens</p>
+                                            </td>
+                                            <td>$10</td>
+                                            <td class="font-danger">out of stock</td>
+                                            <td>2011/04/25</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Delete</button>
+                                                <button class="btn btn-primary btn-xs" type="button"
+                                                    data-original-title="btn btn-danger btn-xs" title="">Edit</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="dataTables_info" id="basic-1_info" role="status" aria-live="polite">Showing 1 to 10 of
+                                    10 entries</div>
+                                <div class="dataTables_paginate paging_simple_numbers" id="basic-1_paginate"><a
+                                        class="paginate_button previous disabled" aria-controls="basic-1" data-dt-idx="0"
+                                        tabindex="0" id="basic-1_previous">Previous</a><span><a class="paginate_button current"
+                                            aria-controls="basic-1" data-dt-idx="1" tabindex="0">1</a></span><a
+                                        class="paginate_button next disabled" aria-controls="basic-1" data-dt-idx="2" tabindex="0"
+                                        id="basic-1_next">Next</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>
+{%endblock%}

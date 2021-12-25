@@ -22,3 +22,17 @@ def register(request):
 
     }
     return render(request, template_name="register.html")
+
+
+def supplier(request):
+    context = {
+
+    }
+    return render(request, template_name="supplier.html")
+
+
+def Car(request):
+    context = {
+
+    }
+    return render(request, template_name="cars.html")
