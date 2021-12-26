@@ -33,3 +33,11 @@ def supplierlist(request):
 
 def add_suppliers(request):
     return render(request, template_name="add_supplier.html")
+
+
+def cars(request):
+    return render(request, template_name="cars.html")
+
+
+def add_cars(request):
+    return render(request, template_name="add_car.html")
