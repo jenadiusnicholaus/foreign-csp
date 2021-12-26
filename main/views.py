@@ -24,15 +24,12 @@ def register(request):
     return render(request, template_name="register.html")
 
 
-def supplier(request):
+def supplierlist(request):
     context = {
 
     }
     return render(request, template_name="supplier.html")
 
 
-def Car(request):
-    context = {
-
-    }
-    return render(request, template_name="cars.html")
+def add_suppliers(request):
+    return render(request, template_name="add_supplier.html")
