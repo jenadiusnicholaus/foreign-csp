@@ -27,7 +27,7 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
         rel="stylesheet">
     <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="{%static 'assets/css/fontawesome.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'assets/fontawesome/css/all.css'%}">
     <!-- ico-font-->
     <link rel="stylesheet" type="text/css" href="{%static 'assets/css/icofont.css'%}">
     <!-- Themify icon-->
@@ -212,7 +212,7 @@
                         href="user-profile.html">
                         <h6 class="mt-3 f-14 f-w-600">Emay Walter</h6>
                     </a>
-                    <p class="mb-0 font-roboto">Human Resources Department</p>
+                    <p class="mb-0 font-roboto"></p>
 
                 </div>
                 <nav>
@@ -231,15 +231,18 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i
-                                            data-feather="database"></i><span>Suppliers</span></a>
+                                            data-feather="database"></i><span>Users</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="{% url 'suppier'%}">Register a car</a></li>
+                                        <li> <a href="{% url 'suppier'%}"> <span><i data-feather="eye"></i></span>Suppliers</span></a></li>
+                                        <li> <a href="{% url 'suppier'%}"> <span><i data-feather="eye"></i></span>Cutomers</a></li>
                                     </ul>
+
                                 </li>
                                 <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i
-                                            data-feather="database"></i><span>Customer</span></a>
+                                            data-feather="database"></i><span>Cars</span></a>
                                     <ul class="nav-submenu menu-content">
-                                        <li><a href="{% url 'cars'%}">Products</a></li>
+                                        <li> <a href="{% url 'suppier'%}"> <span><i data-feather="eye"></i></span>Car Types</a></li>
+                                        <li> <a href="{% url 'suppier'%}"> <span><i data-feather="eye"></i></span>Car Types</a></li>
 
                                     </ul>
                                 </li>

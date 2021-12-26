@@ -79,6 +79,8 @@
                                     </div>
                                 </div>
                             </div>
+
+
                             <div class="form-group">
                                 <label>Phone</label>
                                 <div class="input-group"><span class="input-group-text"><i class="icon-email"></i></span>
@@ -93,21 +95,7 @@
                                     <input class="form-control" type="email" required="" placeholder="Test@gmail.com">
                                 </div>
                             </div>
-                            <div class="row mb-0">
-                                <label class="col-sm-3 col-form-label pb-0">Register as</label>
-                                <div class="col-sm-9">
-                                    <div class="mb-0">
-                                        <div class="form-check form-check-inline checkbox checkbox-primary">
-                                            <input class="form-check-input" id="inline-form-1" type="checkbox">
-                                            <label class="form-check-label" for="inline-form-1">Supplier</label>
-                                        </div>
-                                        <div class="form-check form-check-inline checkbox checkbox-primary">
-                                            <input class="form-check-input" id="inline-form-2" type="checkbox">
-                                            <label class="form-check-label" for="inline-form-2">Customer</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="form-group">
                                 <label>Password</label>
                                 <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
@@ -142,7 +130,7 @@
                                                 data-feather="instagram"> </i></a></li>
                                 </ul>
                             </div>
-                            <p>Already have an account?<a class="ms-2" href="log-in.html">Sign in</a></p>
+                            <p>Already have an account?<a class="ms-2" href="{% url 'login'%}">Sign in</a></p>
                         </form>
                     </div>
                 </div>
