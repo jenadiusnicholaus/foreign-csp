@@ -41,3 +41,11 @@ def cars(request):
 
 def add_cars(request):
     return render(request, template_name="add_car.html")
+
+
+def add_cars(request):
+    return render(request, template_name="add_car.html")
+
+
+def customers(request):
+    return render(request, template_name="customers.html")

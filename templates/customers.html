@@ -1,0 +1,302 @@
+{% extends 'base.html'%}
+
+{%block contents%}
+<div class="page-body">
+    <div class="container-fluid dashboard-default-sec">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Supplier List</h3>
+                </div>
+                <div class="col-sm-6">
+                    <!-- Bookmark Start-->
+                    <div class="bookmark">
+                        <ul>
+                            <li>
+                                <button type="button" class="btn btn-primary-light" data-toggle="modal"
+                                    data-target="#exampleModalCenter">
+                                    <a href="#"><i data-feather="plus"></i>add supplier</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Bookmark Ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card">
+
+                    <div class="card-body btn-showcase">
+                        <div class="card-body">
+                            <div class="dt-ext table-responsive">
+                                <div id="responsive_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+                                    <div class="row">
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <table class="display dataTable dtr-inline" id="responsive" role="grid"
+                                                aria-describedby="responsive_info" style="width:964px;">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_asc" tabindex="0" aria-controls="responsive"
+                                                            rowspan="1" colspan="1" style="width: 146px;"
+                                                            aria-sort="ascending"
+                                                            aria-label="Name: activate to sort column descending">Id
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="responsive"
+                                                            rowspan="1" colspan="1" style="width: 232px;"
+                                                            aria-label="Position: activate to sort column ascending">
+                                                            Name</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="responsive"
+                                                            rowspan="1" colspan="1" style="width: 109px;"
+                                                            aria-label="Office: activate to sort column ascending">Phone
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="responsive"
+                                                            rowspan="1" colspan="1" style="width: 45px;"
+                                                            aria-label="Age: activate to sort column ascending">Email
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="responsive"
+                                                            rowspan="1" colspan="1" style="width: 97px;"
+                                                            aria-label="Start date: activate to sort column ascending">
+                                                            Sort of</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="responsive"
+                                                            rowspan="1" colspan="1" style="width: 83px;"
+                                                            aria-label="Salary: activate to sort column ascending">
+                                                            Actions
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr role="row" class="odd">
+                                                        <td tabindex="0" class="sorting_1">f848739</td>
+                                                        <td>Juma omary</td>
+                                                        <td>0788892390</td>
+                                                        <td>example@gmail.com</td>
+                                                        <td>
+                                                            <div class="span badge rounded-pill pill-badge-success">Borrow</div>
+                                                        </td>
+
+                                                        <td>
+                                                            <a href="3"></a><i data-feather="edit"></i></a>
+                                                            <a href="3"></a><i data-feather="trash-2"></i></a>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">f848739</td>
+                                                        <td>Juma omary</td>
+                                                        <td>0788892390</td>
+                                                        <td>example@gmail.com</td>
+                                                        <td>
+                                                            <div class="span badge rounded-pill pill-badge-success">Borrow</div>
+                                                        </td>
+
+                                                        <td>
+                                                            <a href="3"></a><i data-feather="edit"></i></a>
+                                                            <a href="3"></a><i data-feather="trash-2"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">f848739</td>
+                                                        <td>Juma omary</td>
+                                                        <td>0788892390</td>
+                                                        <td>example@gmail.com</td>
+                                                        <td>
+                                                            <div class="span badge rounded-pill pill-badge-success">Borrow</div>
+                                                        </td>
+
+                                                        <td>
+                                                            <a href="3"></a><i data-feather="edit"></i></a>
+                                                            <a href="3"></a><i data-feather="trash-2"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">f848739</td>
+                                                        <td>Juma omary</td>
+                                                        <td>0788892390</td>
+                                                        <td>example@gmail.com</td>
+                                                        <td>
+                                                            <div class="span badge rounded-pill pill-badge-success">Borrow</div>
+                                                        </td>
+
+                                                        <td>
+                                                            <a href="3"></a><i data-feather="edit"></i></a>
+                                                            <a href="3"></a><i data-feather="trash-2"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">f848739</td>
+                                                        <td>Juma omary</td>
+                                                        <td>0788892390</td>
+                                                        <td>example@gmail.com</td>
+                                                        <td>
+                                                            <div class="span badge rounded-pill pill-badge-success">Buy</div>
+                                                        </td>
+
+                                                        <td>
+                                                            <a href="3"></a><i data-feather="edit"></i></a>
+                                                            <a href="3"></a><i data-feather="trash-2"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td tabindex="0" class="sorting_1">f848739</td>
+                                                        <td>Juma omary</td>
+                                                        <td>0788892390</td>
+                                                        <td>example@gmail.com</td>
+                                                        <td><div class="span badge rounded-pill pill-badge-success">Borrow</div></td>
+                                                        <td>
+                                                            <a href="3"></a><i data-feather="edit"></i></a>
+                                                            <a href="3"></a><i data-feather="trash-2"></i></a>
+                                                        </td>
+                                                    </tr>
+
+                                                <tfoot>
+                                                    <tr>
+                                                        <th rowspan="1" colspan="1">Id</th>
+                                                        <th rowspan="1" colspan="1">Name</th>
+                                                        <th rowspan="1" colspan="1">Phone</th>
+                                                        <th rowspan="1" colspan="1">Email</th>
+                                                        <th rowspan="1" colspan="1">Purpose</th>
+                                                        <th rowspan="1" colspan="1">Actions</th>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5">
+                                            <div class="dataTables_info" id="responsive_info" role="status"
+                                                aria-live="polite">Showing 1 to 10
+                                                of 57 entries</div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-7">
+                                            <div class="dataTables_paginate paging_simple_numbers"
+                                                id="responsive_paginate">
+                                                <ul class="pagination">
+                                                    <li class="paginate_button page-item previous disabled"
+                                                        id="responsive_previous"><a href="#" aria-controls="responsive"
+                                                            data-dt-idx="0" tabindex="0" class="page-link"
+                                                            data-bs-original-title="" title="">Previous</a></li>
+                                                    <li class="paginate_button page-item active"><a href="#"
+                                                            aria-controls="responsive" data-dt-idx="1" tabindex="0"
+                                                            class="page-link" data-bs-original-title="" title="">1</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="responsive" data-dt-idx="2" tabindex="0"
+                                                            class="page-link" data-bs-original-title="" title="">2</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="responsive" data-dt-idx="3" tabindex="0"
+                                                            class="page-link" data-bs-original-title="" title="">3</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="responsive" data-dt-idx="4" tabindex="0"
+                                                            class="page-link" data-bs-original-title="" title="">4</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="responsive" data-dt-idx="5" tabindex="0"
+                                                            class="page-link" data-bs-original-title="" title="">5</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item "><a href="#"
+                                                            aria-controls="responsive" data-dt-idx="6" tabindex="0"
+                                                            class="page-link" data-bs-original-title="" title="">6</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item next" id="responsive_next"><a
+                                                            href="#" aria-controls="responsive" data-dt-idx="7"
+                                                            tabindex="0" class="page-link" data-bs-original-title=""
+                                                            title="">Next</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container-fluid Ends-->
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Register Customer</h5>
+            </div>
+            <div class="modal-body">
+                <div class="form theme-form">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Full name</label>
+                                <input class="form-control" type="text" placeholder="eg Juma Edio">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Phone</label>
+                                <input class="form-control" type="text" placeholder="eg 0788823367">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label>Email</label>
+                                <input class="form-control" type="text" placeholder="eg: example@gmail,com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label>Purose</label>
+                                <select class="form-select">
+                                    <option style="color:black">Buy</option>
+                                    <option style="color:black">Borrow</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label>Created at </label>
+                                <input class="datepicker-here form-control" type="text" data-language="en">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label>Enter some Descrition(Optional)</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
